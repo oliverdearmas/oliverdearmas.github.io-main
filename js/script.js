@@ -10,3 +10,4 @@ if (menuToggle && navMenu) {
     navMenu.classList.toggle("open");
   });
 }
+

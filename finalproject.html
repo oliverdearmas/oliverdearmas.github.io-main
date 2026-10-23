@@ -1,82 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects — Oliver de Armas</title>
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Final Project | Oliver de Armas</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<header class="site-header"><div class="container">
+<a href="index.html" class="site-title">Oliver de Armas</a>
+<button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+<ul class="nav-menu">
+<li><a href="index.html">Home</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="finalproject.html" class="active">Final Project</a></li>
+</ul>
+</div></header>
+<main>
+<div class="step-head"><div class="container">
+<h1>Final Project: L1 Rocket with Custom Avionics</h1>
+<p>A high-power rocket built for Level 1 certification, carrying avionics I designed. Follow the build one step at a time.</p>
+<div class="facts">
+<div class="fact"><b>Status</b>[In progress]</div>
+<div class="fact"><b>Motor</b>[H]</div>
+<div class="fact"><b>Target altitude</b>[ft]</div>
+<div class="fact"><b>Launch date</b>[December 2026]</div>
+</div>
+</div></div>
 
-  <header class="site-header">
-    <div class="container">
-      <a href="index.html" class="site-title">Oliver de Armas</a>
-      <button class="menu-toggle" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="finalproject.html" class="active">Final Project</a></li>
-      </ul>
-    </div>
-  </header>
+<section><div class="container">
+<h2>Build log</h2>
+<!-- When a step changes status, update the pill here AND on that step's page. -->
+<ol class="log">
+<li data-n="1"><a class="card" href="rocket/01-planning.html"><h3>Planning: Project Overview <span class="pill todo">To do</span></h3><p>Goals, requirements, and schedule for the L1 rocket.</p></a></li>
+<li data-n="2"><a class="card" href="rocket/02-initialdesign.html"><h3>Initial Design <span class="pill todo">To do</span></h3><p>Sketches and early decisions about the rocket's shape and layout.</p></a></li>
+<li data-n="3"><a class="card" href="rocket/03-cad.html"><h3>CAD <span class="pill todo">To do</span></h3><p>The 3D model of every part.</p></a></li>
+<li data-n="4"><a class="card" href="rocket/04-openrocket-sim.html"><h3>OpenRocket &amp; Simulation <span class="pill todo">To do</span></h3><p>Simulating stability and altitude before building.</p></a></li>
+<li data-n="5"><a class="card" href="rocket/05-bom.html"><h3>Bill of Materials (BOM) <span class="pill todo">To do</span></h3><p>Every part, where it came from, and what it cost.</p></a></li>
+<li data-n="6"><a class="card" href="rocket/06-nosecone.html"><h3>3D Printing the Nosecone <span class="pill todo">To do</span></h3><p>Printing the nosecone.</p></a></li>
+<li data-n="7"><a class="card" href="rocket/08-fins.html"><h3>The Fins <span class="pill todo">To do</span></h3><p>Fixing the Wazer, cutting the fins, and sanding them.</p></a></li>
+<li data-n="8"><a class="card" href="rocket/09-body-tube.html"><h3>Cutting the Body Tube <span class="pill todo">To do</span></h3><p>Measuring and cutting the airframe tube.</p></a></li>
+<li data-n="9"><a class="card" href="rocket/10-motor-mount.html"><h3>Motor Mount Tube &amp; Attaching the Fins <span class="pill todo">To do</span></h3><p>Building the motor mount and connecting it to the fins.</p></a></li>
+</ol>
 
-  <main>
-    <section>
-      <div class="container">
-        <h1>Mr P Look Here:</h1>
-        <p>1. </b>Sensor rocket airframe. Embedd sensors into the airframe of the rocket. 
-          Use sensors such as foil strain gauges to determine the forces being exerted 
-          on the structures of the rocket and be able to experimentally compare different 
-          materials for the use case of rocketry. This project could also elolve into 
-          making a "digital twin" of the rocket during flight, which essentially uses 
-          all of the data collected by the various sensors (imu, accelerometer, foil 
-          gague sensors) to display the stage of flight and the status of all of the 
-          parts of the rocket visually to make launch days go by smoother. 
-          I like this project because it combines avionics and structures. The 
-          limitations in choosing this project are limited launch dates and inconsistent 
-          testing opportunities.</p>
-          
-          <img src="assets/images/finalproject/rocket_1_sketch.png" style = "width: 45%; height: 45%">
+<details>
+<summary>Ideas I considered before choosing</summary>
 
-          </p> <br>2. Regenerative Air Braking for electric planes. Use 
-          the motors of the plane and spin them backwards to get some of the electricity lost 
-          in braking back for more efficient flight. The inspiration for this project came from
-          my car which uses regenerative breaking in the hybrid system. Adapting the same concept
-          has more limitations during flight than on the ground, but I think this projec thas a much
-          more clear "real world" application. Using electromagnetic induction to potentially make 
-          aircraft more efficient is really cool because it combines the avionics and plane build 
-          components with a technology that is relatively new in aviation. https://ieeexplore.ieee.org/document/9244329
-        </p>
-          
-        <img src="assets/images/finalproject/regen_plane.png" style = "width: 45%; height: 45%">
-          <p>
-          <br>3. The final project that I would like to consider is a thrust vector controlled model rocket. 
-          This project would implement a gimbaled motor mount and use a control feedback loop to correct 
-          any deviations in flight by translating the command to move in a direction into servo output. 
-          This project is the most technically demanding on paper because it uses things like avionics, control systems,
-          and building the rocket itself. BPS Space has a cool video on how he did one, which I would draw inspiration from, 
-          but it is also worth noting that this project has been done before and isn't novel. 
+<div class="idea">
+<h3>1. Sensor rocket airframe</h3>
+<p>Embed sensors into the airframe of the rocket. Use sensors such as foil strain gauges to determine the forces being exerted on the structures of the rocket and be able to experimentally compare different materials for the use case of rocketry. This project could also evolve into making a "digital twin" of the rocket during flight, which essentially uses all of the data collected by the various sensors (IMU, accelerometer, foil gauge sensors) to display the stage of flight and the status of all of the parts of the rocket visually to make launch days go by smoother. I like this project because it combines avionics and structures. The limitations in choosing this project are limited launch dates and inconsistent testing opportunities.</p>
+<img src="assets/images/finalproject/rocket_1_sketch.png" alt="Sketch of a rocket airframe with embedded strain gauges and sensors">
+</div>
 
-        </p>
-        <img src="assets/images/finalproject/tvc_rocket_sketch.png" style = "width: 45%; height: 45%">
-        </div>
-        
-        
-      </div>
-    </section>
-  </main>
+<div class="idea">
+<h3>2. Regenerative air braking for electric planes</h3>
+<p>Use the motors of the plane and spin them backwards to get some of the electricity lost in braking back for more efficient flight. The inspiration for this project came from my car, which uses regenerative braking in the hybrid system. Adapting the same concept has more limitations during flight than on the ground, but I think this project has a much more clear "real world" application. Using electromagnetic induction to potentially make aircraft more efficient is really cool because it combines the avionics and plane build components with a technology that is relatively new in aviation. <a href="https://ieeexplore.ieee.org/document/9244329">IEEE paper</a></p>
+<img src="assets/images/finalproject/regen_plane.png" alt="Sketch of an electric plane with a regenerative braking system">
+</div>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2026 Oliver de Armas. Built with HTML &amp; CSS.</p>
-    </div>
-  </footer>
+<div class="idea">
+<h3>3. Thrust vector controlled model rocket</h3>
+<p>The final project that I would like to consider is a thrust vector controlled model rocket. This project would implement a gimbaled motor mount and use a control feedback loop to correct any deviations in flight by translating the command to move in a direction into servo output. This project is the most technically demanding on paper because it uses things like avionics, control systems, and building the rocket itself. BPS Space has a cool video on how he did one, which I would draw inspiration from, but it is also worth noting that this project has been done before and isn't novel.</p>
+<img src="assets/images/finalproject/tvc_rocket_sketch.png" alt="Sketch of a model rocket with a gimbaled thrust vector control motor mount">
+</div>
 
-  <script src="js/script.js"></script>
+</details>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container"><p>&copy; 2026 Oliver de Armas. Built with HTML &amp; CSS.</p></div></footer>
+<script src="js/script.js"></script>
 </body>
 </html>
+
+

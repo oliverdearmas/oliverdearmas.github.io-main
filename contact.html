@@ -1,71 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact — Oliver</title>
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact &amp; Resume | Oliver de Armas</title>
+<meta name="description" content="Contact Oliver de Armas and view his resume.">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<header class="site-header"><div class="container">
+<a href="index.html" class="site-title">Oliver de Armas</a>
+<button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+<ul class="nav-menu">
+<li><a href="index.html">Home</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="contact.html" class="active">Contact</a></li>
+<li><a href="finalproject.html">Final Project</a></li>
+</ul>
+</div></header>
+<main>
 
-  <header class="site-header">
-    <div class="container">
-      <a href="index.html" class="site-title">Oliver de Armas</a>
-      <button class="menu-toggle" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-        <li><a href="finalproject.html">Final Project</a></li>
-      </ul>
-    </div>
-  </header>
+<div class="step-head"><div class="container">
+<h1>Contact &amp; Resume</h1>
+<p class="contact-intro">I'm always happy to talk about engineering projects, rocketry, internships, or opportunities. Email is the fastest way to reach me, and I usually reply within [a day or two].</p>
+<div class="toc">
+<a href="#contact">Contact</a><a href="#resume">Resume</a>
+</div>
+</div></div>
 
-  <main>
-    <section>
-      <div class="container">
-        <h1>Contact Me</h1>
-        <p>
-          Replace this with your real email address or social links, and
-          feel free to keep or remove the form below.
-        </p>
+<section id="contact"><div class="container">
+<h2>Get in touch</h2>
+<div class="contact-cards">
+<a class="contact-card" href="mailto:oliverdearmas@outlook.com?subject=Hello%20Oliver">
+<small>Email</small>
+<strong>oliverdearmas@outlook.com</strong>
+<span>Best for questions and opportunities</span>
+</a>
+<a class="contact-card" href="https://www.linkedin.com/in/your-linkedin-handle" target="_blank" rel="noopener">
+<small>LinkedIn</small>
+<strong>linkedin.com/in/[your-handle]</strong>
+<span>Professional profile and connections</span>
+</a>
+<a class="contact-card" href="https://github.com/oliverdearmas" target="_blank" rel="noopener">
+<small>GitHub</small>
+<strong>github.com/oliverdearmas</strong>
+<span>Code and project files</span>
+</a>
+</div>
+<!-- Replace your-linkedin-handle in the LinkedIn card with the end of your real profile URL. -->
+</div></section>
 
-        <ul>
-          <li>Email: <a href="mailto:you@example.com">oliverdearmas@outlook.com</a></li>
-          <li>GitHub: <a href="https://github.com/yourusername">github.com/oliverdearmas</a></li>
-        </ul>
+<section id="resume"><div class="container">
+<div class="resume-head">
+<h2>Resume</h2>
+<a class="button" href="assets/resume/Oliver-de-Armas-Resume.pdf" download>Download PDF</a>
+<!-- Save your PDF at assets/resume/Oliver-de-Armas-Resume.pdf so the button works. -->
+</div>
 
-        <!--
-          This form doesn't send anywhere yet — a real contact form needs
-          a backend or a service like Formspree/Google Forms to receive
-          messages. For now it's just a structure to practice with.
-        -->
-        <form>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name">
+<div class="resume">
 
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email">
+<div class="resume-top">
+<h3>Oliver de Armas</h3>
+<p>[Your headline, e.g. High school student and aspiring aerospace engineer]</p>
+<p>oliverdearmas@outlook.com &nbsp;|&nbsp; [City, State] &nbsp;|&nbsp; linkedin.com/in/[your-handle]</p>
+</div>
 
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5"></textarea>
+<div class="r-section">
+<h3>Summary</h3>
+<p class="todo-text">[Write here: Two or three sentences on who you are, what you build, and what you're looking for.]</p>
+</div>
 
-          <button type="submit" class="button">Send</button>
-        </form>
-      </div>
-    </section>
-  </main>
+<div class="r-section">
+<h3>Education</h3>
+<div class="r-entry">
+<div class="r-row"><b>Belen Jesuit Preparatory School</b><span>[Start year] to [Expected graduation year]</span></div>
+<p class="r-sub">[Diploma / program]</p>
+<ul>
+<li>[GPA, if you want to include it]</li>
+<li>[Relevant courses, e.g. physics, calculus, engineering electives]</li>
+<li>[Honors or awards]</li>
+</ul>
+</div>
+</div>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2026 Oliver de Armas. Built with HTML &amp; CSS.</p>
-    </div>
-  </footer>
+<div class="r-section">
+<h3>Projects</h3>
+<div class="r-entry">
+<div class="r-row"><b>L1 Certification Rocket with Custom Avionics</b><span>[Start date] to [Present]</span></div>
+<ul>
+<li>[Designed the airframe in CAD and simulated stability and altitude in OpenRocket]</li>
+<li>[3D printed and vapor smoothed the nosecone; cut and sanded the fins]</li>
+<li>[Designed custom avionics that measure ___]</li>
+</ul>
+</div>
+<div class="r-entry">
+<div class="r-row"><b>Laser Cut Teddy Bear Chair</b><span>[Date]</span></div>
+<ul>
+<li>[What you designed and the result]</li>
+<li>[Tools used, e.g. laser cutter, CAD software]</li>
+</ul>
+</div>
+</div>
 
-  <script src="js/script.js"></script>
+<div class="r-section">
+<h3>Experience</h3>
+<div class="r-entry">
+<div class="r-row"><b>[Job or internship title]</b><span>[Start] to [End]</span></div>
+<p class="r-sub">[Organization], [City, State]</p>
+<ul>
+<li>[What you did, starting with an action verb]</li>
+<li>[A result or number, e.g. "Trained 12 new volunteers"]</li>
+</ul>
+</div>
+</div>
+
+<div class="r-section">
+<h3>Activities &amp; leadership</h3>
+<div class="r-entry">
+<div class="r-row"><b>Varsity Water Polo, Belen Jesuit</b><span>[Years]</span></div>
+<ul>
+<li>[Position, team achievements, captain role if any]</li>
+</ul>
+</div>
+<div class="r-entry">
+<div class="r-row"><b>[Club, team, or volunteer role]</b><span>[Years]</span></div>
+<ul>
+<li>[What you did or led]</li>
+</ul>
+</div>
+</div>
+
+<div class="r-section">
+<h3>Skills</h3>
+<ul class="skill-list">
+<li>CAD ([software])</li>
+<li>OpenRocket</li>
+<li>3D printing</li>
+<li>Laser cutting</li>
+<li>HTML &amp; CSS</li>
+<li>[Programming language]</li>
+<li>[Electronics / soldering]</li>
+<li>[Language, e.g. Spanish]</li>
+</ul>
+</div>
+
+<div class="r-section">
+<h3>Awards &amp; certifications</h3>
+<ul>
+<li>[Award or certification, issuer, year]</li>
+</ul>
+</div>
+
+</div>
+</div></section>
+
+</main>
+<footer class="site-footer"><div class="container"><p>&copy; 2026 Oliver de Armas. Built with HTML &amp; CSS.</p></div></footer>
+<script src="js/script.js"></script>
 </body>
 </html>
+
